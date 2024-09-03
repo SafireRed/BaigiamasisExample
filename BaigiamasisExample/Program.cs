@@ -2,7 +2,10 @@ using BaigiamasisExample.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -12,10 +15,19 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+var dbName = "BaigiamasisExample";
+if(File.Exists(dbName))
+    File.Delete(dbName);
 
-builder.Services.AddControllers();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//await using var dbContext = new ApplicationDbContext();
+//await dbContext.Database.EnsureCreatedAsync();
+//await dbContext.SaveChangesAsync();
+
+
+
+
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

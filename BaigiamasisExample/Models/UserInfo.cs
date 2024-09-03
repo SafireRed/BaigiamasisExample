@@ -10,6 +10,6 @@
         public string Email { get; set; }
         //public byte[] ProfilePhoto { get; set; }
         public virtual UserHouseStuff UserHouseStuff { get; set; }
-        public virtual User User {  get; set; }
+        //public virtual User User {  get; set; }
     }
 }
