@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaigiamasisExample", "BaigiamasisExample\BaigiamasisExample.csproj", "{23D26A1F-500E-44E4-BF2B-716DE38515AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1BB58E0F-D31C-4044-8BDD-8B0392509D84}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23D26A1F-500E-44E4-BF2B-716DE38515AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D26A1F-500E-44E4-BF2B-716DE38515AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D26A1F-500E-44E4-BF2B-716DE38515AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D26A1F-500E-44E4-BF2B-716DE38515AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {805DAC45-BC4A-4552-A216-25E7D18AE0B4}
+	EndGlobalSection
+EndGlobal
